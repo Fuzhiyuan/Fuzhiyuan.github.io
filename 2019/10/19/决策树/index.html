@@ -13,7 +13,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <title>
     
-      Hello World | Nothing
+      一.决策树 | Nothing
     
   </title>
   <meta name="author" content="Fuzhiyuan">
@@ -164,7 +164,7 @@
 	<!-- Page title -->
 	<p>
 		
-			当前文章&nbsp;:&nbsp;《Hello World》
+			当前文章&nbsp;:&nbsp;《一.决策树》
 		
 	</p>
 
@@ -285,8 +285,8 @@
 	<div class="article-title">
 		<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
 		
-	<a href="/2019/10/19/hello-world/" itemprop="url">
-		Hello World
+	<a href="/2019/10/19/%E5%86%B3%E7%AD%96%E6%A0%91/" itemprop="url">
+		一.决策树
 	</a>
 
 	</div>
@@ -299,8 +299,8 @@
 
 	发布于
 
-	<a href="/2019/10/19/hello-world/" itemprop="url">
-		<time datetime="2019-10-19T09:52:07.626Z" itemprop="datePublished">
+	<a href="/2019/10/19/%E5%86%B3%E7%AD%96%E6%A0%91/" itemprop="url">
+		<time datetime="2019-10-19T15:55:56.000Z" itemprop="datePublished">
 	  		2019-10-19
 	  </time>
 	</a>
@@ -317,9 +317,9 @@
 
 	更新于
 
-	<a href="/2019/10/19/hello-world/" itemprop="url">
-		<time datetime="2019-10-19T09:52:07.626Z" itemprop="dateUpdated">
-	  		2019-10-19
+	<a href="/2019/10/19/%E5%86%B3%E7%AD%96%E6%A0%91/" itemprop="url">
+		<time datetime="2019-10-19T15:55:56.000Z" itemprop="dateUpdated">
+	  		2019-10-20
 	  </time>
 	</a> 
 
@@ -328,7 +328,13 @@
 		</span>
 		<span>
 			<i class="fa fa-tags"></i>
-					
+			
+	
+		<a href="/tags/%E5%9F%BA%E7%A1%80/" class=" ">
+			基础
+		</a>
+	
+		
 		</span>
 		
 		
@@ -338,23 +344,28 @@
 	</div>
 
 	<div class="article-content" id="article-content">
-		<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+		<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在具体了解机器学习之前，我们先了解一些基本的操作和概念的了解。以下的内容你可能感觉十分简单，你可以自行选择后面内容学习，不过我还是建议每篇文章都大概浏览一遍，以防后面文章中提到的名词之类的不理解，如果你不太理解，也别灰心，很多前面文章一带而过的东西则会在后面详细讲解。</p>
+<h2 id="决策树"><a href="#决策树" class="headerlink" title="决策树"></a>决策树</h2><p>众所周知，房地产一直都是一个非常暴力的行业，很多人靠着炒房发家致富。恰好，小王的爸爸就是搞房地产的，随着机器学习的变成一种潮流，老王也准备在自己的行业上运用机器学习来帮助他更好的预测房市，买卖土地。于是就向小王的同学也就是掌握机器学习知识的你求助。</p>
+<p>当你问老王，在过去他是如何预测房价时，他却说靠直觉。但是机智的你怎么可能会被这些鬼话骗住，随着更多的询问，你发现老王其实是从过去的房价中发现了一个套路，他利用这个套路来预测新房子的价格。</p>
+<p><strong><u><em>机器学习也是这样。</u></em></strong></p>
+<p>我们将会从决策树这个模型开始讲解。在机器学习里面存在很多准确度更高的模型，但是决策树则是最容易理解的一个，同时它也是很多优秀模型的底层模块。</p>
+<p>我们将会从决策树这个模型开始讲解。在机器学习里面存在很多准确度更高的模型，但是决策树则是最容易理解的一个，同时它也是很多优秀模型的底层模块。</p>
+<h2 id="简约决策树"><a href="#简约决策树" class="headerlink" title="简约决策树"></a>简约决策树</h2><p><img src="http://m.qpic.cn/psb?/V10HMVG42xWkSG/4xdlRq4dSeLmTBPoKEIrFQDXB4lNJtoM1wWr*LjR5MQ!/b/dIMAAAAAAAAA&bo=2wF.AQAAAAADB4c!&rf=viewer_4" alt="3BA81A9DEFAA5D09275539883506DD75"></p>
+<p>从图中可以看出这个决策树把房价预测分为两类，图中所列出的房价均为该地区同类型历史房屋均价。</p>
+<p>在实际中，我们用数据来决定如何把房价分为两类，然后再次得到房价，这个从数据中捕获房价套路的过程就叫做拟合或者叫训练(fit  or  train) 被用来拟合模型的数据叫做训练集。</p>
+<p>至于一个模型如何拟合是一个有点复杂的过程，我将会在后面进行讲述。在模型被拟合后，你将把未被预测房价的房子喂进模型从而获得其预测房价，这部分数据叫做测试集。</p>
+<h2 id="改进决策树"><a href="#改进决策树" class="headerlink" title="改进决策树"></a>改进决策树</h2><p><img src="http://m.qpic.cn/psb?/V10HMVG42xWkSG/HQfICjYGF*HQk*pHxkyDEI0VE370cqokY0JwdbBrLg8!/b/dLgAAAAAAAAA&bo=wQN*AQAAAAADB54!&rf=viewer_4" alt="1C2B2E1D1290935CF8DEBEDAB88AFEC8"></p>
+<p>上面两个决策树哪个更可能是拟合过训练集得到的？</p>
+<p>左面的决策树更可能，因为它捕获现实的情况：有着更多的房屋的房子房价更高。但是上面的这个简约决策树有着最大的缺点就是它不能学习更多的影响因子，比如房屋尺寸，地段，等等。</p>
+<p>那么我们就可以利用更多的分支来学习，叫做深层决策树，这样的深层决策树可以考虑每个房屋的总面积。图像表示就是：</p>
+<p><img src="http://m.qpic.cn/psb?/V10HMVG42xWkSG/jNM1.b60MxyTTfhQtG8q3PNntqYfxC8rNub4r9Juc6s!/b/dL8AAAAAAAAA&bo=xQLBAQAAAAADByU!&rf=viewer_4" alt="8BD8FDCD7C823AA6D7492CC8D4276A8B"></p>
+<p>你预测的过程就是从树上行走的过程，总是挑选符合当前房屋特性的路径走。</p>
+<p>这里的每个分支，每片叶子所代表的价格都是被你的训练数据所决定的。</p>
+<p>下一章，我们将会讲解如何检验数据。</p>
 	
 	</div>
 	
-	<div id="current-post-cover" data-scr="/img/cart_cover.jpg"></div>
+	<div id="current-post-cover" data-scr="http://m.qpic.cn/psb?/V10HMVG42xWkSG/GcC6OA.iLKk2goW0LNu0FElElSqC3gHrHb8tytZAV2E!/b/dDYBAAAAAAAA&bo=gAc4BAAAAAARB4s!&rf=viewer_4"></div>
 
 	<!-- relate post, comment...-->
 	<div class="investment-container">
@@ -369,10 +380,10 @@
 	<span>
 		<a href="javascript: window.scrollTo(0, 0);">返回顶部</a>
 		
-			<a href="/2019/10/19/%E5%86%B3%E7%AD%96%E6%A0%91/" title="一.决策树" rel="prev">
-				&laquo;上一篇
-			</a>
 		
+			<a href="/2019/10/19/hello-world/" title="Hello World" rel="next">
+				下一篇&raquo;
+			</a>
 			
 	</span>
 
@@ -391,22 +402,22 @@
 			
 					<li>
 						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2019/10/19/%E5%86%B3%E7%AD%96%E6%A0%91/" title="一.决策树">
-								一.决策树			
+							<a class="relate-post-title" href="/2019/10/19/hello-world/" title="Hello World">
+								Hello World			
 							</a>
 							<p class="relate-post-date">
 								<i class="fa fa-calendar"></i>
 								十月 19日, 2019				
 							</p>
 							<p class="relate-post-content">
-								前言在具体了解机器学习之前，我们先了解一些基本的操作和概念的了解。以下的内容你可能感觉十分简单，你可以自行选择后面内容学习，不过我还是建议每篇文章都大概浏览一遍，以防后面文章中提到的名词之类的不理解，如果你不太理解，也别灰心，很多前面...
+								Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using ...
 							</p>
 						</div>
 
 						<div class="relate-post-cover">
-							<a href="/2019/10/19/%E5%86%B3%E7%AD%96%E6%A0%91/" title="一.决策树">				
+							<a href="/2019/10/19/hello-world/" title="Hello World">				
 								
-								<img class="lazy" src="/img/placeholder.jpg" data-src="http://m.qpic.cn/psb?/V10HMVG42xWkSG/GcC6OA.iLKk2goW0LNu0FElElSqC3gHrHb8tytZAV2E!/b/dDYBAAAAAAAA&amp;bo=gAc4BAAAAAARB4s!&amp;rf=viewer_4" alt="一.决策树"/>
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="Hello World"/>
 							</a>
 						</div>
 					</li>											
