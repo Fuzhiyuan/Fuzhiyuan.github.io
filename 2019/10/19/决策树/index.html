@@ -353,7 +353,7 @@
 <h2 id="简约决策树"><a href="#简约决策树" class="headerlink" title="简约决策树"></a>简约决策树</h2><p><img src="http://m.qpic.cn/psb?/V10HMVG42xWkSG/4xdlRq4dSeLmTBPoKEIrFQDXB4lNJtoM1wWr*LjR5MQ!/b/dIMAAAAAAAAA&bo=2wF.AQAAAAADB4c!&rf=viewer_4" alt="3BA81A9DEFAA5D09275539883506DD75"></p>
 <p>从图中可以看出这个决策树把房价预测分为两类，图中所列出的房价均为该地区同类型历史房屋均价。</p>
 <p>在实际中，我们用数据来决定如何把房价分为两类，然后再次得到房价，这个从数据中捕获房价套路的过程就叫做拟合或者叫训练(fit  or  train) 被用来拟合模型的数据叫做训练集。</p>
-<p>至于一个模型如何拟合是一个有点复杂的过程，我将会在后面进行讲述。在模型被拟合后，你将把未被预测房价的房子喂进模型从而获得其预测房价，这部分数据叫做测试集。</p>
+<p>至于一个模型如何拟合是一个有点复杂的过程，我将会在后面进行讲述。在模型被拟合后，你将把未被预测房价的房子喂进模型从而获得其预测房价。</p>
 <h2 id="改进决策树"><a href="#改进决策树" class="headerlink" title="改进决策树"></a>改进决策树</h2><p><img src="http://m.qpic.cn/psb?/V10HMVG42xWkSG/HQfICjYGF*HQk*pHxkyDEI0VE370cqokY0JwdbBrLg8!/b/dLgAAAAAAAAA&bo=wQN*AQAAAAADB54!&rf=viewer_4" alt="1C2B2E1D1290935CF8DEBEDAB88AFEC8"></p>
 <p>上面两个决策树哪个更可能是拟合过训练集得到的？</p>
 <p>左面的决策树更可能，因为它捕获现实的情况：有着更多的房屋的房子房价更高。但是上面的这个简约决策树有着最大的缺点就是它不能学习更多的影响因子，比如房屋尺寸，地段，等等。</p>
