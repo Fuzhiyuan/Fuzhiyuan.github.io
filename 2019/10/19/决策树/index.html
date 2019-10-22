@@ -319,7 +319,7 @@
 
 	<a href="/2019/10/19/%E5%86%B3%E7%AD%96%E6%A0%91/" itemprop="url">
 		<time datetime="2019-10-19T15:55:56.000Z" itemprop="dateUpdated">
-	  		2019-10-21
+	  		2019-10-22
 	  </time>
 	</a> 
 
@@ -350,15 +350,15 @@
 <p><strong><u><em>机器学习也是这样。</u></em></strong></p>
 <p>我们将会从决策树这个模型开始讲解。在机器学习里面存在很多准确度更高的模型，但是决策树则是最容易理解的一个，同时它也是很多优秀模型的底层模块。</p>
 <p>我们将会从决策树这个模型开始讲解。在机器学习里面存在很多准确度更高的模型，但是决策树则是最容易理解的一个，同时它也是很多优秀模型的底层模块。</p>
-<h2 id="简约决策树"><a href="#简约决策树" class="headerlink" title="简约决策树"></a>简约决策树</h2><p><img src="http://m.qpic.cn/psb?/V10HMVG42xWkSG/4xdlRq4dSeLmTBPoKEIrFQDXB4lNJtoM1wWr*LjR5MQ!/b/dIMAAAAAAAAA&bo=2wF.AQAAAAADB4c!&rf=viewer_4" alt="3BA81A9DEFAA5D09275539883506DD75"></p>
+<h2 id="简约决策树"><a href="#简约决策树" class="headerlink" title="简约决策树"></a>简约决策树</h2><p><img src="https://fuzhiyuan-1259296248.cos.ap-chengdu.myqcloud.com/kaggle_%E7%BF%BB%E8%AF%91/3BA81A9DEFAA5D09275539883506DD75.png" alt="3BA81A9DEFAA5D09275539883506DD75"></p>
 <p>从图中可以看出这个决策树把房价预测分为两类，图中所列出的房价均为该地区同类型历史房屋均价。</p>
 <p>在实际中，我们用数据来决定如何把房价分为两类，然后再次得到房价，这个从数据中捕获房价套路的过程就叫做拟合或者叫训练(fit  or  train) 被用来拟合模型的数据叫做训练集。</p>
 <p>至于一个模型如何拟合是一个有点复杂的过程，我将会在后面进行讲述。在模型被拟合后，你将把未被预测房价的房子喂进模型从而获得其预测房价。</p>
-<h2 id="改进决策树"><a href="#改进决策树" class="headerlink" title="改进决策树"></a>改进决策树</h2><p><img src="http://m.qpic.cn/psb?/V10HMVG42xWkSG/HQfICjYGF*HQk*pHxkyDEI0VE370cqokY0JwdbBrLg8!/b/dLgAAAAAAAAA&bo=wQN*AQAAAAADB54!&rf=viewer_4" alt="1C2B2E1D1290935CF8DEBEDAB88AFEC8"></p>
+<h2 id="改进决策树"><a href="#改进决策树" class="headerlink" title="改进决策树"></a>改进决策树</h2><p><img src="https://fuzhiyuan-1259296248.cos.ap-chengdu.myqcloud.com/kaggle_%E7%BF%BB%E8%AF%91/1C2B2E1D1290935CF8DEBEDAB88AFEC8.png" alt="1C2B2E1D1290935CF8DEBEDAB88AFEC8"></p>
 <p>上面两个决策树哪个更可能是拟合过训练集得到的？</p>
 <p>左面的决策树更可能，因为它捕获现实的情况：有着更多的房屋的房子房价更高。但是上面的这个简约决策树有着最大的缺点就是它不能学习更多的影响因子，比如房屋尺寸，地段，等等。</p>
 <p>那么我们就可以利用更多的分支来学习，叫做深层决策树，这样的深层决策树可以考虑每个房屋的总面积。图像表示就是：</p>
-<p><img src="http://m.qpic.cn/psb?/V10HMVG42xWkSG/jNM1.b60MxyTTfhQtG8q3PNntqYfxC8rNub4r9Juc6s!/b/dL8AAAAAAAAA&bo=xQLBAQAAAAADByU!&rf=viewer_4" alt="8BD8FDCD7C823AA6D7492CC8D4276A8B"></p>
+<p><img src="https://fuzhiyuan-1259296248.cos.ap-chengdu.myqcloud.com/kaggle_%E7%BF%BB%E8%AF%91/8BD8FDCD7C823AA6D7492CC8D4276A8B.png" alt="8BD8FDCD7C823AA6D7492CC8D4276A8B"></p>
 <p>你预测的过程就是从树上行走的过程，总是挑选符合当前房屋特性的路径走。</p>
 <p>这里的每个分支，每片叶子所代表的价格都是被你的训练数据所决定的。</p>
 <p>下一章，我们将会讲解如何检验数据。</p>
@@ -380,6 +380,10 @@
 	<span>
 		<a href="javascript: window.scrollTo(0, 0);">返回顶部</a>
 		
+			<a href="/2019/10/21/%E8%AF%BB%E6%95%B0%E6%8D%AE/" title="post" rel="prev">
+				&laquo;上一篇
+			</a>
+		
 		
 			<a href="/2019/10/19/hello-world/" title="Hello World" rel="next">
 				下一篇&raquo;
@@ -399,6 +403,30 @@
 <div class="relate-post">
 	
 		<ul>
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2019/10/21/%E8%AF%BB%E6%95%B0%E6%8D%AE/" title="post">
+								post			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								十月 21日, 2019				
+							</p>
+							<p class="relate-post-content">
+								如何读取数据前言人工智能本质上是数据科学，一切操作都是基于对数据的操作，因此，立志要学好ai的人就必须要学会数据的基本操作。
+先来个简单的先介绍一种比较简单的读取文件方式，这种方式相对于下面的pandas读取来说速度更快的一点，结构自...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2019/10/21/%E8%AF%BB%E6%95%B0%E6%8D%AE/" title="post">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="https://fuzhiyuan-1259296248.cos.ap-chengdu.myqcloud.com/%E5%9B%BE%E5%BA%93/10.jpg" alt="post"/>
+							</a>
+						</div>
+					</li>											
+			
 			
 					<li>
 						<div class="relate-post-text">

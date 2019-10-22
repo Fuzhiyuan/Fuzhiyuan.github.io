@@ -13,7 +13,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <title>
     
-      Hello World | Nothing
+      post | Nothing
     
   </title>
   <meta name="author" content="Fuzhiyuan">
@@ -164,7 +164,7 @@
 	<!-- Page title -->
 	<p>
 		
-			当前文章&nbsp;:&nbsp;《Hello World》
+			当前文章&nbsp;:&nbsp;《post》
 		
 	</p>
 
@@ -285,8 +285,8 @@
 	<div class="article-title">
 		<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
 		
-	<a href="/2019/10/19/hello-world/" itemprop="url">
-		Hello World
+	<a href="/2019/10/21/%E8%AF%BB%E6%95%B0%E6%8D%AE/" itemprop="url">
+		post
 	</a>
 
 	</div>
@@ -299,9 +299,9 @@
 
 	发布于
 
-	<a href="/2019/10/19/hello-world/" itemprop="url">
-		<time datetime="2019-10-19T09:52:07.626Z" itemprop="datePublished">
-	  		2019-10-19
+	<a href="/2019/10/21/%E8%AF%BB%E6%95%B0%E6%8D%AE/" itemprop="url">
+		<time datetime="2019-10-21T09:59:37.000Z" itemprop="datePublished">
+	  		2019-10-21
 	  </time>
 	</a>
 	&nbsp;
@@ -317,9 +317,9 @@
 
 	更新于
 
-	<a href="/2019/10/19/hello-world/" itemprop="url">
-		<time datetime="2019-10-19T09:52:07.626Z" itemprop="dateUpdated">
-	  		2019-10-19
+	<a href="/2019/10/21/%E8%AF%BB%E6%95%B0%E6%8D%AE/" itemprop="url">
+		<time datetime="2019-10-21T09:59:37.000Z" itemprop="dateUpdated">
+	  		2019-10-22
 	  </time>
 	</a> 
 
@@ -328,7 +328,13 @@
 		</span>
 		<span>
 			<i class="fa fa-tags"></i>
-					
+			
+	
+		<a href="/tags/%E6%96%B0%E6%89%8B/" class=" ">
+			新手
+		</a>
+	
+		
 		</span>
 		
 		
@@ -338,23 +344,85 @@
 	</div>
 
 	<div class="article-content" id="article-content">
-		<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+		<h1 id="如何读取数据"><a href="#如何读取数据" class="headerlink" title="如何读取数据"></a>如何读取数据</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>人工智能本质上是数据科学，一切操作都是基于对数据的操作，因此，立志要学好ai的人就必须要学会数据的基本操作。</p>
+<h2 id="先来个简单的"><a href="#先来个简单的" class="headerlink" title="先来个简单的"></a>先来个简单的</h2><p>先介绍一种比较简单的读取文件方式，这种方式相对于下面的pandas读取来说速度更快的一点，结构自定，对于新手来说比较方便</p>
+<p>先寻找文件地址：</p>
+<p>这里存在两种不同的情况，第一种就是相对比较简单的，你要操作的数据就在你当前目录下，那么直接操作就可以，下面讲讲第二种情况，即数据文件不在当前目录下。</p>
+<p>针对这种情况，一种比较正规的方式是使用os库，现假设你当前目录为d:\file\python,但是你的数据文件在d:\dataset这个文件夹里面，那么这时候你只需要调用</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os </span><br><span class="line">os.chdir(<span class="string">'d:\dataset'</span>)</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>这样你的当前目录就调到dataset文件下，之后你就可以读取文件，</p>
+<p>第二种方式是，如果你在jupyter上运行代码的话，你可以直接新建一个代码段用cd指令来进行调转。</p>
+<p>在确定你的当前操作目录跟你的数据集文件在同一目录下后，你就可以读取文件了，简单的方式是：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">file = open(<span class="string">'train.txt'</span>,<span class="string">'r'</span>)</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>然后这里文件形式为：</p>
+<table>
+<thead>
+<tr>
+<th>user</th>
+<th>item</th>
+<th>rating</th>
+<th>timestamp</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0</td>
+<td>5</td>
+<td>3</td>
+<td>0898988</td>
+</tr>
+<tr>
+<td>0</td>
+<td>4</td>
+<td>2</td>
+<td>….</td>
+</tr>
+<tr>
+<td>….</td>
+<td>…</td>
+<td>…</td>
+<td>….</td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>….</td>
+<td>….</td>
+</tr>
+</tbody></table>
+<p>这里第一行是0 5 3 987334</p>
+<p>那么连续读取文章的方式为</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">line = file.readline()</span><br><span class="line"><span class="keyword">while</span> line !=<span class="literal">None</span> <span class="keyword">and</span> line !=<span class="string">''</span>:</span><br><span class="line">    arr = line.strip(<span class="string">' '</span>).split(<span class="string">' '</span>)</span><br><span class="line">    user,item,rating = arr[<span class="number">0</span>],arr[<span class="number">1</span>],arr[<span class="number">2</span>]</span><br><span class="line">    line = file.readline()</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>通过这种方式就可以很方便的读取数据，还能把数据存成你喜欢的数据格式。</p>
+<h2 id="利用pandas"><a href="#利用pandas" class="headerlink" title="利用pandas"></a>利用pandas</h2><p>这里介绍一种有点逼格的方法，利用python强大库中的pandas</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line">train_file = pd.read_csv(<span class="string">'train.csv'</span>,names=[<span class="string">'user'</span>,<span class="string">'item'</span>,<span class="string">'rating'</span>,<span class="string">'timestamp'</span>],sep=<span class="string">'\t'</span>)</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<p>这样你就打开了这个train.csv文件，函数还规定了每列的名字。这个方法的好处是，一个语句就可以把整个文件读出。</p>
+<p>train_file.head() 就会输出前五行的数据</p>
+<p>train_file.decribe()则会显示每列的数据形式</p>
+<p>这里简单的介绍下这个pandas，利用这个函数读出的格式为datafram格式，这个格式包含很多内置函数来帮助你处理数据，就是初期使用会有的繁琐，上手以后十分快乐。</p>
+<h3 id="pd-cut-data-bin"><a href="#pd-cut-data-bin" class="headerlink" title="pd.cut(data,bin):"></a>pd.cut(data,bin):</h3><p>这个函数可以帮助你把数据按照bin的格式进行分类。</p>
+<p>bin = [0,59,70,80,100]</p>
+<p>data=[ <em>27 ,70 ,55, 87 ,95 ,98, 55 ,61, 86, 76, 85, 53, 39, 88, 41, 71, 64, 94, 38, 94</em> ]</p>
+<p>那么在处理过后，cut=pd.cut(data,bin)</p>
+<p>cut = [ (0, 59], (59, 70], (0, 59], (80, 100], (80, 100], …, (70, 80], (59, 70], (80, 100], (0, 59], (80, 100] ]</p>
+<p>然后你还可以基于此进行一个统计</p>
+<p> pd.value_counts(cut)</p>
+<p>输出为</p>
+<p> (80, 100]    8 </p>
+<p>(0, 59]      7 </p>
+<p>(59, 70]     3 </p>
+<p>(70, 80]     2  </p>
+<h3 id="pd-apply"><a href="#pd-apply" class="headerlink" title="pd.apply()"></a>pd.apply()</h3><p>这个函数个人感觉是非常有用的一个函数，在处理数据时非常舒服。这个函数可以让你非常方便的对datafram的行或者列进行操作。</p>
+<p>剩下的还有lambda ,fillna()函数…..，以及画图的mataplot，seaborn这些函数都不再详细讲解，不过这些都将会在你以后的学习中经常用到，自己学习一下。</p>
+<p>链接: <a href="https://pan.baidu.com/s/17MjWhS-owkDRYYwj_4mQZQ&amp;shfl=shareset" target="_blank" rel="noopener">https://pan.baidu.com/s/17MjWhS-owkDRYYwj_4mQZQ&amp;shfl=shareset</a> 提取码: e62w </p>
+<p>这里有个数据集，可以尝试一下把里面的数据集按照用户名从小到大的顺序排序，然后计算每个用户的平均值并把这个平均值加到数据里面。</p>
 	
 	</div>
 	
-	<div id="current-post-cover" data-scr="/img/cart_cover.jpg"></div>
+	<div id="current-post-cover" data-scr="https://fuzhiyuan-1259296248.cos.ap-chengdu.myqcloud.com/%E5%9B%BE%E5%BA%93/10.jpg"></div>
 
 	<!-- relate post, comment...-->
 	<div class="investment-container">
@@ -369,10 +437,10 @@
 	<span>
 		<a href="javascript: window.scrollTo(0, 0);">返回顶部</a>
 		
-			<a href="/2019/10/19/%E5%86%B3%E7%AD%96%E6%A0%91/" title="一.决策树" rel="prev">
-				&laquo;上一篇
-			</a>
 		
+			<a href="/2019/10/19/%E5%86%B3%E7%AD%96%E6%A0%91/" title="一.决策树" rel="next">
+				下一篇&raquo;
+			</a>
 			
 	</span>
 
@@ -388,30 +456,6 @@
 <div class="relate-post">
 	
 		<ul>
-			
-					<li>
-						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2019/10/21/%E8%AF%BB%E6%95%B0%E6%8D%AE/" title="post">
-								post			
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								十月 21日, 2019				
-							</p>
-							<p class="relate-post-content">
-								如何读取数据前言人工智能本质上是数据科学，一切操作都是基于对数据的操作，因此，立志要学好ai的人就必须要学会数据的基本操作。
-先来个简单的先介绍一种比较简单的读取文件方式，这种方式相对于下面的pandas读取来说速度更快的一点，结构自...
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2019/10/21/%E8%AF%BB%E6%95%B0%E6%8D%AE/" title="post">				
-								
-								<img class="lazy" src="/img/placeholder.jpg" data-src="https://fuzhiyuan-1259296248.cos.ap-chengdu.myqcloud.com/%E5%9B%BE%E5%BA%93/10.jpg" alt="post"/>
-							</a>
-						</div>
-					</li>											
-			
 			
 					<li>
 						<div class="relate-post-text">
@@ -432,6 +476,29 @@
 							<a href="/2019/10/19/%E5%86%B3%E7%AD%96%E6%A0%91/" title="一.决策树">				
 								
 								<img class="lazy" src="/img/placeholder.jpg" data-src="http://m.qpic.cn/psb?/V10HMVG42xWkSG/GcC6OA.iLKk2goW0LNu0FElElSqC3gHrHb8tytZAV2E!/b/dDYBAAAAAAAA&amp;bo=gAc4BAAAAAARB4s!&amp;rf=viewer_4" alt="一.决策树"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2019/10/19/hello-world/" title="Hello World">
+								Hello World			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								十月 19日, 2019				
+							</p>
+							<p class="relate-post-content">
+								Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using ...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2019/10/19/hello-world/" title="Hello World">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="Hello World"/>
 							</a>
 						</div>
 					</li>											
