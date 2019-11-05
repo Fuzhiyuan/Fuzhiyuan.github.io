@@ -13,7 +13,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <title>
     
-      Hello World | Nothing
+      Knn | Nothing
     
   </title>
   <meta name="author" content="Fuzhiyuan">
@@ -164,7 +164,7 @@
 	<!-- Page title -->
 	<p>
 		
-			当前文章&nbsp;:&nbsp;《Hello World》
+			当前文章&nbsp;:&nbsp;《Knn》
 		
 	</p>
 
@@ -285,8 +285,8 @@
 	<div class="article-title">
 		<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
 		
-	<a href="/2019/10/19/hello-world/" itemprop="url">
-		Hello World
+	<a href="/2019/11/05/Knn/" itemprop="url">
+		Knn
 	</a>
 
 	</div>
@@ -299,9 +299,9 @@
 
 	发布于
 
-	<a href="/2019/10/19/hello-world/" itemprop="url">
-		<time datetime="2019-10-19T09:52:07.626Z" itemprop="datePublished">
-	  		2019-10-19
+	<a href="/2019/11/05/Knn/" itemprop="url">
+		<time datetime="2019-11-05T04:03:52.000Z" itemprop="datePublished">
+	  		2019-11-05
 	  </time>
 	</a>
 	&nbsp;
@@ -317,9 +317,9 @@
 
 	更新于
 
-	<a href="/2019/10/19/hello-world/" itemprop="url">
-		<time datetime="2019-10-19T09:52:07.626Z" itemprop="dateUpdated">
-	  		2019-10-19
+	<a href="/2019/11/05/Knn/" itemprop="url">
+		<time datetime="2019-11-05T04:03:52.000Z" itemprop="dateUpdated">
+	  		2019-11-05
 	  </time>
 	</a> 
 
@@ -328,7 +328,13 @@
 		</span>
 		<span>
 			<i class="fa fa-tags"></i>
-					
+			
+	
+		<a href="/tags/%E5%85%A5%E9%97%A8/" class=" ">
+			入门
+		</a>
+	
+		
 		</span>
 		
 		
@@ -338,23 +344,32 @@
 	</div>
 
 	<div class="article-content" id="article-content">
-		<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+		<h1 id="KNN"><a href="#KNN" class="headerlink" title="KNN"></a>KNN</h1><h2 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h2><p>knn（K-Nearest Neighbor）中文名叫做k最近邻算法，这是有监督算法（自己下去百度一下什么是有监督，什么是无监督），分类算法中简单粗暴的一个。</p>
+<p>分类方法是根据距离该点最近的k个邻居，从而得到该点所属的分类。</p>
+<p>这个算法的核心思想是：如果一个样本在样本空间中的k个最相邻的样本中大多数属于某一个类别，则该样本也属于该类别。</p>
+<p>算法详细流程是：</p>
+<p>一：计算样本空间中存在的点与当前点的距离。</p>
+<p>二： 按照距离递增的关系进行排列。</p>
+<p>三：选取前k个点（k的值由自己选定）</p>
+<p>四：确定前k个点所属的分类。</p>
+<p>五：选择前k个点中分类出现次数最高的分类最为该点所属的分类。</p>
+<p>这里，我们可以看出当前样本点所属的分类跟k的取值是有很大关系的，k的值过小，则会导致当前点的所属分类会出现偶然性（也就是所谓的噪音干扰，相比常识下也会认为k==1，是不正常的），整个模型也会变得复杂，容易变得过拟合（这个概念自己下去查询一下）。</p>
+<p>相反的，k的取值过大也会导致模型变得简单，较远的点也会对分类的预测起到作用。</p>
+<p>同时k的值尽可能取奇数，避免五五开的情况。</p>
+<p><img src="https://fuzhiyuan-1259296248.cos.ap-chengdu.myqcloud.com/kaggle_%E7%BF%BB%E8%AF%91/Knn.png" alt="1378215-20180805232806939-472376897"></p>
+<p>正如上面的图所示，如果这里k==3，那么很明显绿点就属于三角形这个分类。</p>
+<p>这个算法看起来确实简单，暴力，请用KNN实现手写数字识别。</p>
+<p>（学有余力者： <a href="https://blog.csdn.net/zzz_cming/article/details/78938107" target="_blank" rel="noopener">https://blog.csdn.net/zzz_cming/article/details/78938107</a> </p>
+<p>​                            <a href="https://www.kaggle.com/mineshjethva/knn-from-scratch-in-python-at-97-1" target="_blank" rel="noopener">https://www.kaggle.com/mineshjethva/knn-from-scratch-in-python-at-97-1</a> ）</p>
+<p>当前点的取值除了跟k的取值有关之外，还跟距离的度量有关。</p>
+<h2 id="下面介绍几个距离计算公式："><a href="#下面介绍几个距离计算公式：" class="headerlink" title="下面介绍几个距离计算公式："></a>下面介绍几个距离计算公式：</h2><p>欧氏距离：</p>
+<p>这个是我们最为熟悉的一个距离计算公式：最常见的是空间中两点间的距离公式。<br>$$<br>d=\sqrt{(x_1-x_2)^2+(y_1-y_2)^2}<br>$$<br>n维的公式以此类推就好。</p>
+<p>曼哈顿距离<br>$$<br>d=|x_1-x_2|+|y_1-y_2|<br>$$<br>n维以此类推</p>
+<p>切比雪夫距离：<br>$$<br>d=max(|x_1-x_2|,|y_1-y_2|)<br>$$<br>如果有兴趣的话，可以观察一下，在国际象棋中，国王每走一步，移动的最小距离就是切比雪夫距离。</p>
 	
 	</div>
 	
-	<div id="current-post-cover" data-scr="/img/cart_cover.jpg"></div>
+	<div id="current-post-cover" data-scr="https://fuzhiyuan-1259296248.cos.ap-chengdu.myqcloud.com/%E5%9B%BE%E5%BA%93/12.jfif"></div>
 
 	<!-- relate post, comment...-->
 	<div class="investment-container">
@@ -369,10 +384,10 @@
 	<span>
 		<a href="javascript: window.scrollTo(0, 0);">返回顶部</a>
 		
-			<a href="/2019/10/19/%E5%86%B3%E7%AD%96%E6%A0%91/" title="一.决策树" rel="prev">
-				&laquo;上一篇
-			</a>
 		
+			<a href="/2019/11/04/%E8%AF%A6%E8%A7%A3_/" title="pandas 简单介绍" rel="next">
+				下一篇&raquo;
+			</a>
 			
 	</span>
 
@@ -388,30 +403,6 @@
 <div class="relate-post">
 	
 		<ul>
-			
-					<li>
-						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2019/11/05/Knn/" title="Knn">
-								Knn			
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								十一月 5日, 2019				
-							</p>
-							<p class="relate-post-content">
-								KNN前言：knn（K-Nearest Neighbor）中文名叫做k最近邻算法，这是有监督算法（自己下去百度一下什么是有监督，什么是无监督），分类算法中简单粗暴的一个。
-分类方法是根据距离该点最近的k个邻居，从而得到该点所属的分类。...
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2019/11/05/Knn/" title="Knn">				
-								
-								<img class="lazy" src="/img/placeholder.jpg" data-src="https://fuzhiyuan-1259296248.cos.ap-chengdu.myqcloud.com/%E5%9B%BE%E5%BA%93/12.jfif" alt="Knn"/>
-							</a>
-						</div>
-					</li>											
-			
 			
 					<li>
 						<div class="relate-post-text">
@@ -507,6 +498,29 @@
 							<a href="/2019/10/19/%E5%86%B3%E7%AD%96%E6%A0%91/" title="一.决策树">				
 								
 								<img class="lazy" src="/img/placeholder.jpg" data-src="http://m.qpic.cn/psb?/V10HMVG42xWkSG/GcC6OA.iLKk2goW0LNu0FElElSqC3gHrHb8tytZAV2E!/b/dDYBAAAAAAAA&amp;bo=gAc4BAAAAAARB4s!&amp;rf=viewer_4" alt="一.决策树"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2019/10/19/hello-world/" title="Hello World">
+								Hello World			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								十月 19日, 2019				
+							</p>
+							<p class="relate-post-content">
+								Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using ...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2019/10/19/hello-world/" title="Hello World">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="Hello World"/>
 							</a>
 						</div>
 					</li>											
