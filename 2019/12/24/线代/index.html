@@ -13,7 +13,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <title>
     
-      Hello World | Nothing
+      线代简讲 | Nothing
     
   </title>
   <meta name="author" content="Fuzhiyuan">
@@ -164,7 +164,7 @@
 	<!-- Page title -->
 	<p>
 		
-			当前文章&nbsp;:&nbsp;《Hello World》
+			当前文章&nbsp;:&nbsp;《线代简讲》
 		
 	</p>
 
@@ -285,8 +285,8 @@
 	<div class="article-title">
 		<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
 		
-	<a href="/2019/10/19/hello-world/" itemprop="url">
-		Hello World
+	<a href="/2019/12/24/%E7%BA%BF%E4%BB%A3/" itemprop="url">
+		线代简讲
 	</a>
 
 	</div>
@@ -299,9 +299,9 @@
 
 	发布于
 
-	<a href="/2019/10/19/hello-world/" itemprop="url">
-		<time datetime="2019-10-19T09:52:07.626Z" itemprop="datePublished">
-	  		2019-10-19
+	<a href="/2019/12/24/%E7%BA%BF%E4%BB%A3/" itemprop="url">
+		<time datetime="2019-12-24T08:19:44.000Z" itemprop="datePublished">
+	  		2019-12-24
 	  </time>
 	</a>
 	&nbsp;
@@ -317,9 +317,9 @@
 
 	更新于
 
-	<a href="/2019/10/19/hello-world/" itemprop="url">
-		<time datetime="2019-10-19T09:52:07.626Z" itemprop="dateUpdated">
-	  		2019-10-19
+	<a href="/2019/12/24/%E7%BA%BF%E4%BB%A3/" itemprop="url">
+		<time datetime="2019-12-24T08:19:44.000Z" itemprop="dateUpdated">
+	  		2019-12-24
 	  </time>
 	</a> 
 
@@ -328,7 +328,13 @@
 		</span>
 		<span>
 			<i class="fa fa-tags"></i>
-					
+			
+	
+		<a href="/tags/%E6%96%B0%E6%89%8B/" class=" ">
+			新手
+		</a>
+	
+		
 		</span>
 		
 		
@@ -338,23 +344,67 @@
 	</div>
 
 	<div class="article-content" id="article-content">
-		<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+		<h1 id="行列式"><a href="#行列式" class="headerlink" title="行列式"></a>行列式</h1><p> 谈到线性代数时有两个基本概念：行列式，矩阵。</p>
+<p>说到行列式我们应该明确一点：行列式表达的是一个具体的值，他的表现形式为<br>$$<br>\left| \begin{array}{c}<br>    a_{\text{1,}1},, a_{\text{1,}2}\<br>    a_{\text{2,}1},,a_{\text{2,}2}\<br>\end{array} \right|<br>$$<br>行列式一定是n*n的类型。</p>
+<h2 id="行列式的计算法则："><a href="#行列式的计算法则：" class="headerlink" title="行列式的计算法则："></a>行列式的计算法则：</h2><p>在讲解行列式的计算方式前，先介绍主对角线和负对角线的区别。<br>$$<br>\left| \begin{array}{c}<br>    a_{\text{1,}1},, a_{\text{1,}2},, a_{\text{1,}3},,\<br>    a_{\text{2,}1},,  a_{\text{2,}2},,a_{\text{2,}3}\<br>    a_{\text{3,}1},,  a_{\text{3,}2},,a_{\text{3,}3}\<br>\end{array} \right|<br>$$<br>在这个行列式中国a11 a22 a33 和a21 a 32 a13等都为主对角线上的元素 ，而副对角线是a13 a22 a31 ,a12 a21 a33和a11 a23 a32属于副对角线。一般来说几阶行列式就会有多少个主负对角线。</p>
+<p>然后介绍行列式的计算法则：就是把所有主对角线的乘积和减去副对角线乘积和，以上面的行列式来讲就是：</p>
+<p>(a11 X a22 X a33) + (a12 X a23 X a31)+(a13 X a21 X a32) - (a13 X a22 X a31) - (a12 X a21 X a33) - (a11 X a23 X a32)</p>
+<h2 id="下面介绍相关性质："><a href="#下面介绍相关性质：" class="headerlink" title="下面介绍相关性质："></a>下面介绍相关性质：</h2><ol>
+<li><p>行列式与它的转置行列式相等（转置行列式就是原来的a12 变成a21,也就是行和列的值换个位置)</p>
+</li>
+<li><p>对换行列式任意两行/列,行列式变号。</p>
+</li>
+<li><p>如果行列式有两行/列相等，则行列式为0，可用2来证明。</p>
+</li>
+<li><p>如果行列式中的某一行/列都是两数之和，则可以把行列式进行拆分。<br>$$<br>\left| \begin{array}{c}</p>
+<pre><code>a+b\,\,  e\\
+f+g\,\,  n\\</code></pre><p>\end{array} \right|=\left| \begin{array}{c}</p>
+<pre><code>a\,\,  e\\
+f\,\,  n\\</code></pre><p>\end{array} \right|+\left| \begin{array}{c}</p>
+<pre><code>b\,\,  e\\
+g\,\,  n\\</code></pre><p>\end{array} \right|<br>$$</p>
+</li>
+<li><p>把行列式的某一行(列)的各个元素乘同一个数后再加到另一行(列)对应的元素上去，行列式值不变。</p>
+<p>代数余子式的概念： $A_{ij}$ 就是在n阶行列式中把(i,j)中第i行第j列划去后留下的行列式叫$a_{ij}$的余子式$M_{ij}$</p>
+<p>而 $A_{ij}$ =$(-1)^{i+j}M_{ij}$ </p>
+<h1 id="矩阵"><a href="#矩阵" class="headerlink" title="矩阵"></a>矩阵</h1></li>
+</ol>
+<p>与行列式不同，矩阵代表的不是一个具体的值而是一个数表，同时其本身也不再限定行和列必须相同。</p>
+<p>矩阵的来源可以说是为了解决线性方程有无解的一种工具。</p>
+<p>对于行数和列数相同的矩阵叫做n阶矩阵或者n阶方阵。</p>
+<p>3阶单位矩阵<br>$$<br>\left( \begin{array}{c}<br>    \text{1  0  }0\<br>    \text{0  1  }0\<br>    \text{0  0  }1\<br>\end{array} \right)<br>$$</p>
+<h3 id="对于矩阵的加减法必须是相同形状的矩阵对应元素加减。"><a href="#对于矩阵的加减法必须是相同形状的矩阵对应元素加减。" class="headerlink" title="对于矩阵的加减法必须是相同形状的矩阵对应元素加减。"></a>对于矩阵的加减法必须是相同形状的矩阵对应元素加减。</h3><h3 id="矩阵乘法可以说是矩阵的一大特色了，"><a href="#矩阵乘法可以说是矩阵的一大特色了，" class="headerlink" title="矩阵乘法可以说是矩阵的一大特色了，"></a>矩阵乘法可以说是矩阵的一大特色了，</h3><p>矩阵A*矩阵B=矩阵C</p>
+<p>那么对于$C_{ij}$ 来说是矩阵A的第 i 行的各个元素×矩阵B第j列的各个元素，这也就表明了对于两个矩阵相乘前一个矩阵的列数必须等于后一个矩阵的行数，<strong>且矩阵乘法不满足交换律</strong> 。</p>
+<h3 id="下面介绍矩阵的逆："><a href="#下面介绍矩阵的逆：" class="headerlink" title="下面介绍矩阵的逆："></a>下面介绍矩阵的逆：</h3><p>跟整数中的逆的概念一样一个数乘以一个数的逆等于1 </p>
+<p>M* $M^-1$= E  (这也表明了如果一个矩阵有逆，则该矩阵对应的行列式一定不为0，且该矩阵一定为方阵)。</p>
+<p>$A^-1$ =$\frac{1}{|A|}A^<em>$  这里的|A| 表示的是矩阵A所对应的行列式 A</em>表示的是伴随矩阵</p>
+<p>A*:<br>$$<br>\left( \begin{array}{c}<br>    A_{11},, A_{21},, A_{31}\<br>    A_{12},, A_{22},, A_{32}\<br>    .     .      .\<br>    .     .      .\<br>    A_{1n},, A_{2n},, A_{3n}\<br>\end{array} \right)<br>$$<br>还记得$A_{ij}$的意思吗？ 看清楚这里的顺序！</p>
+<p>接下来介绍几个关于逆矩阵的性质：</p>
+<p>$x\in R$ 则$（λM)^{-1}=\frac{1}{\lambda}M^{-1}$</p>
+<p>若A，B同阶且都可逆，$(AB)^{-1}=B^{-1}A^{-1}$</p>
+<h2 id="矩阵子式"><a href="#矩阵子式" class="headerlink" title="矩阵子式"></a>矩阵子式</h2><p>任取k行k列，这k方个元素在不改变其原本次序的情况下所组成的矩阵就叫做矩阵A的子式。也就是取矩阵A的第1，2，3行，第2，3，6列这九个元素，按照在原来矩阵的相对位置重新放在一个空矩阵中，就叫做矩阵A的3阶子式。由此就引出了矩阵秩的概念：矩阵最大的k阶子式。</p>
+<p>意思是若此时阶数最大的k阶子式所对应的行列式不为0，任一K+1阶子式对应的行列式为0，则该矩阵的秩为k。</p>
+<h2 id="正交矩阵"><a href="#正交矩阵" class="headerlink" title="正交矩阵"></a>正交矩阵</h2><p>若对n阶矩阵A若$A^TA=E$ 则称A为正交阵。这从另一个方向表明A的每个列向量都是单位向量，且两两列向量正交（不明白，自己可以找个矩阵试一下）</p>
+<p>接下俩就要介绍一下其他跟矩阵论相关的概念</p>
+<h1 id="范数"><a href="#范数" class="headerlink" title="范数"></a>范数</h1><p>有时候我们需要衡量一个向量的大小。在机器学习中，我们经常使用称为范数的函数来衡量向量大小</p>
+<p>形式上范数定义如下：<br>$$<br>||X^P||=(\sum_{i}|x_i|^p)^{\frac {1}{p}}<br>$$<br>其中$p\in R,p\geqslant1$ </p>
+<p>直观上来说，x的范数更像是衡量向量x到原点的距离，想一想是不是很想距离公式？</p>
+<p>当p=2时，叫做二阶范数，也叫欧几里得范数表示为$L^2$范数，在机器学习中经常简写为||x||</p>
+<h1 id="特征分解"><a href="#特征分解" class="headerlink" title="特征分解"></a>特征分解</h1><p>相信大家都知道整数可以分解为质因数，我们可以通过分解一个数来了解一个数的性质，比如$12=2<em>2</em>3$ ,从中我们可以知道12不能被5整除，但可以被3整除，同样的我们也可以通过分解一个矩阵来进一步了解其中的性质。</p>
+<p>那么什么叫特征分解？</p>
+<p>首先，我们先要知道什么叫特征向量，特征向量指的是与矩阵A相乘后相当于对该向量进行放缩的非零向量v</p>
+<p>Av=λv</p>
+<p>其中标量λ就叫做特征向量对应的特征值。</p>
+<p>如果v是A的特征向量，则任何缩放的sv（$s\in R$）也是A的特征向量。</p>
+<p>如果矩阵A有n个线性无关的特征向量（这个线性无关指的是这n个向量中的任何1个向量都不能被n-1个向量所构成$v_i \neq k_0v_0+k_1v_1+…+k_{n-1}v_{n-1}(k0,k1 \in R)$ ，那么这n个线性无关的特征向量也就会对应着n个特征值$\lambda _n$</p>
+<p>此时，矩阵A的特征分解就可以表示为：$A=V diag(\lambda)V^T$ 这里的diag表示对角矩阵 (想一想这个关系式子是怎么来的？)</p>
+<p>一般来说，实对称矩阵都可以分解为特征向量和特征值。</p>
+<p>在这里你可以自己做一个运算来进一步发现特征分解的秘密，矩阵A有两个标准正交的特征向量（自己随便造一个），其特征值为λ0和λ1，你让矩阵A左乘上一个单位向量组成的矩阵（也就是在二维坐标系下是一个圆形），再画出乘积过后的图形，发现圆形将会按照你自己造的两个特征向量的方向放缩了特质值倍。</p>
+<h1 id="迹运算"><a href="#迹运算" class="headerlink" title="迹运算"></a>迹运算</h1><p>Tr(A)就是矩阵A的对角线和</p>
 	
 	</div>
 	
-	<div id="current-post-cover" data-scr="/img/cart_cover.jpg"></div>
+	<div id="current-post-cover" data-scr="https://fuzhiyuan-1259296248.cos.ap-chengdu.myqcloud.com/%E5%9B%BE%E5%BA%93/2.png"></div>
 
 	<!-- relate post, comment...-->
 	<div class="investment-container">
@@ -369,10 +419,10 @@
 	<span>
 		<a href="javascript: window.scrollTo(0, 0);">返回顶部</a>
 		
-			<a href="/2019/10/19/%E5%86%B3%E7%AD%96%E6%A0%91/" title="一.决策树" rel="prev">
-				&laquo;上一篇
-			</a>
 		
+			<a href="/2019/11/05/Knn/" title="Knn" rel="next">
+				下一篇&raquo;
+			</a>
 			
 	</span>
 
@@ -388,54 +438,6 @@
 <div class="relate-post">
 	
 		<ul>
-			
-					<li>
-						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2019/12/24/%E7%BA%BF%E4%BB%A3/" title="线代简讲">
-								线代简讲			
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								十二月 24日, 2019				
-							</p>
-							<p class="relate-post-content">
-								行列式 谈到线性代数时有两个基本概念：行列式，矩阵。
-说到行列式我们应该明确一点：行列式表达的是一个具体的值，他的表现形式为$$\left| \begin{array}{c}    a_{\text{1,}1},, a_{\text{...
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2019/12/24/%E7%BA%BF%E4%BB%A3/" title="线代简讲">				
-								
-								<img class="lazy" src="/img/placeholder.jpg" data-src="https://fuzhiyuan-1259296248.cos.ap-chengdu.myqcloud.com/%E5%9B%BE%E5%BA%93/2.png" alt="线代简讲"/>
-							</a>
-						</div>
-					</li>											
-			
-			
-					<li>
-						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2019/11/05/Knn/" title="Knn">
-								Knn			
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								十一月 5日, 2019				
-							</p>
-							<p class="relate-post-content">
-								KNN前言：knn（K-Nearest Neighbor）中文名叫做k最近邻算法，这是有监督算法（自己下去百度一下什么是有监督，什么是无监督），分类算法中简单粗暴的一个。
-分类方法是根据距离该点最近的k个邻居，从而得到该点所属的分类。...
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2019/11/05/Knn/" title="Knn">				
-								
-								<img class="lazy" src="/img/placeholder.jpg" data-src="https://fuzhiyuan-1259296248.cos.ap-chengdu.myqcloud.com/%E5%9B%BE%E5%BA%93/12.jfif" alt="Knn"/>
-							</a>
-						</div>
-					</li>											
-			
 			
 					<li>
 						<div class="relate-post-text">
@@ -536,6 +538,53 @@
 					</li>											
 			
 			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2019/11/05/Knn/" title="Knn">
+								Knn			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								十一月 5日, 2019				
+							</p>
+							<p class="relate-post-content">
+								KNN前言：knn（K-Nearest Neighbor）中文名叫做k最近邻算法，这是有监督算法（自己下去百度一下什么是有监督，什么是无监督），分类算法中简单粗暴的一个。
+分类方法是根据距离该点最近的k个邻居，从而得到该点所属的分类。...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2019/11/05/Knn/" title="Knn">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="https://fuzhiyuan-1259296248.cos.ap-chengdu.myqcloud.com/%E5%9B%BE%E5%BA%93/12.jfif" alt="Knn"/>
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2019/10/19/hello-world/" title="Hello World">
+								Hello World			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								十月 19日, 2019				
+							</p>
+							<p class="relate-post-content">
+								Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using ...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2019/10/19/hello-world/" title="Hello World">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="Hello World"/>
+							</a>
+						</div>
+					</li>											
+			
+			
 		</ul>
 	
 </div>	
@@ -621,6 +670,17 @@
 
 
 <!-- show math formula -->
+
+	<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config(
+			{ 
+				tex2jax: {
+					inlineMath: [['$','$'], ['\\(','\\)']]
+				} 
+			}
+		);
+	</script>
 
 
 
